@@ -2,9 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Instagram, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { AutoEliteLogo } from "@/components/AutoEliteLogo";
 
 export function Brand() {
-  return <Link to="/" className="brand" aria-label="AutoElite home"><span className="brand-mark">AE</span><span>AUTO<span className="text-primary">ELITE</span></span></Link>;
+  return <AutoEliteLogo />;
 }
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -21,10 +22,10 @@ export function Header() {
 }
 export function Footer() {
   return <footer className="site-footer"><div className="shell"><div className="footer-grid">
-    <div><Brand/><p>The world's most distinguished collection of exceptional pre-owned luxury and performance cars.</p><div className="social"><Instagram size={18}/><span>IN</span><span>X</span></div></div>
+    <div><Brand/><p>Independent specialists in exceptional pre-owned luxury and performance motorcars.</p><div className="social"><Instagram size={18}/><span>IN</span><span>X</span></div></div>
     <div><span className="footer-label">DISCOVER</span><Link to="/inventory">Inventory</Link><Link to="/sell">Sell your car</Link><Link to="/financing">Financing</Link></div>
     <div><span className="footer-label">ASSISTANCE</span><Link to="/" hash="contact">Contact</Link><Link to="/" hash="process">Our process</Link><Link to="/" hash="contact">Schedule a viewing</Link></div>
-    <div><span className="footer-label">THE SHOWROOM</span><strong>MONTREAL, QUEBEC</strong><p>Private viewings by appointment.<br/>All contact details shown are for demonstration only.</p></div>
-  </div><div className="footer-bottom"><span>© 2026 AUTOELITE MOTORS. CONCEPT SHOWROOM.</span><span>160-POINT INSPECTION &nbsp; · &nbsp; WHITE-GLOVE DELIVERY</span></div></div></footer>;
+    <div><span className="footer-label">THE SHOWROOM</span><strong>MONTRÉAL, QUÉBEC</strong><p>Private viewings by appointment.<br/>Monday–Saturday, 9:00–18:00.</p></div>
+  </div><div className="footer-bottom"><span>© 2026 AUTOELITE MOTORCARS. SHOWCASE INVENTORY.</span><span>160-POINT INSPECTION &nbsp; · &nbsp; WHITE-GLOVE DELIVERY</span></div></div></footer>;
 }
 export function SectionLabel({ children }: { children: React.ReactNode }) { return <span className="section-label"><span className="label-line"/>{children}</span> }
