@@ -11,3 +11,4 @@
 
 - Keep showroom inventory as static data in `src/lib/cars.ts` and forms as demo-only client interactions, because this project is a visual showcase without persistence.
 - Share site navigation/footer from `src/components/SiteChrome.tsx` in the root route, because all content pages use one consistent showroom frame.
+- Use the custom AutoElite marque from `src/components/AutoEliteLogo.tsx` for all brand placements and favicon artwork, so the showroom has one consistent identity.

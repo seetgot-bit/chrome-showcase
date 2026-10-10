@@ -78,9 +78,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-       { title: "AutoElite Motors" },
-       { name: "description", content: "A curated collection of exceptional luxury and performance cars." },
-       { property: "og:title", content: "AutoElite Motors" },
+       { title: "AutoElite Motorcars" },
+       { name: "description", content: "A curated collection of exceptional luxury and performance motorcars in Montréal." },
+       { property: "og:title", content: "AutoElite Motorcars" },
        { property: "og:description", content: "A curated collection of exceptional luxury and performance cars." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
